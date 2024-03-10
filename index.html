@@ -311,6 +311,39 @@
         </audio>
         <p>What the ghost?!</p>
       </div>
+      </div>
+      <!--row 6-->
+      <div class="row" style="overflow: hidden">
+        <!--button 6-->
+        <button
+          class="button"
+          onmouseover="growing6()"
+          onmouseout="shrinking6()"
+          onclick="shimmy6()"
+          id="button6"
+        >
+          <div class="container">
+            <img
+              class="pond"
+              src="img\pink.png"
+              style="width: 100%"
+              alt="img of a pink button"
+            />
+            <img class="ring" src="img\ring.png" ; id="ring6" />
+          </div>
+        </button>
+
+        <!--content box 6-->
+        <div class="segment" id="segment6">
+          <video width="100%" controls>
+            <source src="video/genmock.mp4" />
+          </video>
+          <p>
+            This was a mock-up for a generative music livestream. The mockup
+            features basic generative music of my creation.
+          </p>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -350,11 +383,19 @@
         document.getElementById("ring5").style.scale = "100%";
       }
 
+      function growing6() {
+        document.getElementById("ring6").style.scale = "350%";
+      }
+      function shrinking6() {
+        document.getElementById("ring6").style.scale = "100%";
+      }
+
       let middle1 = 2;
       let middle2 = 2;
       let middle3 = 2;
       let middle4 = 2;
       let middle5 = 2;
+      let middle6 = 2;
 
       function shimmy1() {
         if (middle1 % 2 == 0) {
@@ -406,6 +447,17 @@
           middle5 = middle5 + 1;
         }
       }
+
+      function shimmy6() {
+        if (middle6 % 2 == 0) {
+          document.getElementById("button6").style.marginLeft = "10%";
+          middle6 = middle6 + 1;
+        } else {
+          document.getElementById("button6").style.marginLeft = "40%";
+          middle6 = middle6 + 1;
+        }
+      }
+
       /* content box 1 transition */
       document.addEventListener("DOMContentLoaded", function () {
         var box1 = document.getElementById("segment1"),
@@ -583,6 +635,42 @@
             box5.classList.remove("segTransin");
             box5.classList.remove("segVis");
             box5.classList.remove("segHide");
+          },
+          false
+        );
+      });
+
+      /* content box 6 transition */
+      document.addEventListener("DOMContentLoaded", function () {
+        var box6 = document.getElementById("segment6"),
+          button6 = document.getElementById("button6");
+
+        button6.addEventListener(
+          "click",
+          function (e) {
+            if (box6.classList.contains("segAct")) {
+              // hide
+              box6.classList.remove("segAct");
+              box6.classList.add("segTransout");
+              box6.classList.add("segHide");
+            } else {
+              // show
+              box6.classList.add("segVis");
+              box6.clientWidth;
+              box6.classList.add("segTransin");
+              box6.classList.add("segAct");
+            }
+          },
+          false
+        );
+
+        box6.addEventListener(
+          "transitionend",
+          function () {
+            box6.classList.remove("segTransout");
+            box6.classList.remove("segTransin");
+            box6.classList.remove("segVis");
+            box6.classList.remove("segHide");
           },
           false
         );
