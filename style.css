@@ -1,0 +1,92 @@
+body {
+  background-image: radial-gradient(white, rgb(235, 235, 235));
+  background-repeat: repeat;
+}
+
+.portitle {
+  font-family: phosphorus, junge, serif;
+}
+
+/*unnecessary div with all the action in it*/
+.bulk {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*button class*/
+.button {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 40px;
+  padding: 0%;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  transition: margin 2s;
+  float: left;
+}
+
+/*div in buttons for formatting img*/
+.container {
+  position: relative;
+  border: none;
+}
+
+/*animated white circle img*/
+.ring {
+  position: absolute;
+  border: none;
+  width: 30%;
+  left: 35%;
+  top: 35%;
+  transition: scale 3s;
+}
+
+.segment {
+  width: 40%;
+  padding: 5%;
+  border: solid;
+  border-color: gray;
+  border-radius: 30px;
+  float: left;
+  margin-left: 10%;
+  margin-top: 40px;
+  display: none;
+  opacity: 0;
+}
+
+.segAct {
+  display: inline;
+  opacity: 1;
+}
+
+.segVis {
+  display: inline;
+  opacity: 0;
+}
+
+.segTransin.segVis {
+  display: inline;
+  opacity: 0.5;
+}
+
+.segTransin {
+  transition: opacity 0.5s linear;
+  transition-delay: 2s;
+}
+
+.segTransout {
+  transition: opacity 0.4s linear;
+  transition-delay: 0s;
+}
+
+.segHide {
+  display: inline;
+  opacity: 0;
+}
+
+audio {
+  width: 100%;
+}
