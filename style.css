@@ -12,13 +12,13 @@ body {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 /*button class*/
 .button {
   width: 20%;
   margin-left: 40%;
-  margin-top: 40px;
   padding: 0%;
   background-color: transparent;
   border-radius: 50%;
@@ -52,7 +52,6 @@ body {
   border-radius: 30px;
   float: left;
   margin-left: 10%;
-  margin-top: 40px;
   display: none;
   opacity: 0;
 }
