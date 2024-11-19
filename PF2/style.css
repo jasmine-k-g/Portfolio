@@ -1,0 +1,71 @@
+:root {
+  --primary-background-image: radial-gradient(white, rgb(235, 235, 235));
+}
+
+body {
+  height: 100%;
+  overflow-y: scroll;
+  background-image: var(--primary-background-image);
+  background-repeat: repeat;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: junge, serif;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.my-name {
+  width: 20rem;
+  margin: auto;
+}
+
+.jasmine {
+  margin-top: 2rem;
+}
+
+.griffiths {
+  margin-left: 7rem;
+  margin-top: -2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  width: 20rem;
+  margin: auto;
+  padding: 0%;
+}
+
+.nav-ul {
+  width: 100%;
+  display: flex;
+  flex-direction: x;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
+}
+
+.thumbnail-preview {
+  max-width: 100%;
+  max-height: 11.2rem;
+  flex-shrink: 0;
+}
+
+#portfolio-box {
+  background-color: gray;
+  margin-top: 3rem;
+}
+
+container {
+  width: 20rem;
+  overflow-wrap: break-word;
+}
+
+.pf-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+}
