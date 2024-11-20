@@ -26,6 +26,7 @@ body {
   cursor: pointer;
   transition: margin 2s;
   float: left;
+  transform: rotate(45deg);
 }
 
 /*div in buttons for formatting img*/

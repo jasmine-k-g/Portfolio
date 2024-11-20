@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+    <title>Portfolio Jasmine Griffiths</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a
+          class="nav-icon"
+          onmouseover="growingPortfolio()"
+          onmouseout="shrinkingPortfolio()"
+          onclick="goToPF()"
+          id="buttonPortfolio"
+          href="../index.html"
+        >
+          <div class="container">
+            <img
+              src="../img/portfolio.png"
+              style="width: 100%"
+              id="portfolioImage"
+              alt="a gradient purple icon with the text 'portfolio'"
+            />
+            <img class="ring" src="../img\ring.png" ; id="ringPortfolio" />
+          </div>
+        </a>
+
+        <a class="my-name" href="../about.html" style="text-decoration: none">
+          <h1 class="jasmine">Jasmine</h1>
+          <h1 class="griffiths">Griffiths</h1>
+        </a>
+
+        <a
+          class="nav-icon"
+          onmouseover="growingContact()"
+          onmouseout="shrinkingContact()"
+          onclick="goToC()"
+          id="buttonContact"
+          href="../contact.html"
+        >
+          <div class="container">
+            <img
+              src="../img/contact.png"
+              style="width: 100%"
+              id="contactImage"
+              alt="a gradient coral-orange icon with the text 'contact'"
+            />
+            <img
+              class="ring"
+              src="../img\ring.png"
+              ;
+              id="ringContact"
+              style="left: 35%"
+              ;
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
+    <section class="content-box" style="text-align: center">
+      <div class="description">
+        <h2 style="font-size: 1.4rem">
+          You're At A Party<br /><span
+            >Writing, design, art and coding by Eamonn Harte.<br />Music and
+            sound design by Jasmine Griffiths</span
+          >
+        </h2>
+        <div class="description-para">
+          <p>
+            You're At A Party is a narrative game / piece of interactive fiction
+            that explores the complexities of queer relationships. Unfolding
+            over one night, at a party in a suburban sharehouse, the player
+            comes face to face with their ex and his new partner, and has to
+            navigate the tense, awkward situation that unfolds after that.
+          </p>
+        </div>
+      </div>
+      <a href="https://aetheriun.itch.io/youre-at-a-party"
+        ><button class="link-button">View on itch.io</button></a
+      >
+      <img src="../img/0CVWeY.png" style="margin-top: 3rem" />
+    </section>
+  </body>
+</html>

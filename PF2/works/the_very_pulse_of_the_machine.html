@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+    <title>Portfolio Jasmine Griffiths</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a
+          class="nav-icon"
+          onmouseover="growingPortfolio()"
+          onmouseout="shrinkingPortfolio()"
+          onclick="goToPF()"
+          id="buttonPortfolio"
+          href="../index.html"
+        >
+          <div class="container">
+            <img
+              src="../img/portfolio.png"
+              style="width: 100%"
+              id="portfolioImage"
+              alt="a gradient purple icon with the text 'portfolio'"
+            />
+            <img class="ring" src="../img\ring.png" ; id="ringPortfolio" />
+          </div>
+        </a>
+
+        <a class="my-name" href="../about.html" style="text-decoration: none">
+          <h1 class="jasmine">Jasmine</h1>
+          <h1 class="griffiths">Griffiths</h1>
+        </a>
+
+        <a
+          class="nav-icon"
+          onmouseover="growingContact()"
+          onmouseout="shrinkingContact()"
+          onclick="goToC()"
+          id="buttonContact"
+          href="../contact.html"
+        >
+          <div class="container">
+            <img
+              src="../img/contact.png"
+              style="width: 100%"
+              id="contactImage"
+              alt="a gradient coral-orange icon with the text 'contact'"
+            />
+            <img
+              class="ring"
+              src="../img\ring.png"
+              ;
+              id="ringContact"
+              style="left: 35%"
+              ;
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
+    <section class="content-box" style="text-align: center">
+      <div class="description">
+        <h2 style="font-size: 1.4rem">
+          The Very Pulse of the Machine<br /><span
+            >Re-designed sound and music by Jasmine Griffiths<br />Video scene
+            from Love, Death + Robots</span
+          >
+        </h2>
+        <div class="description-para">
+          <p>
+            How to remove a video from its context, yet retain meaning? How to
+            reinvent a soundtrack, yet stay true to the image? These are
+            problems that must be solved when creating a reinterpretation of the
+            sound of an existing work, and I did my best to tackle them in my
+            edition of The Very Pulse of the Machine, from the Love, Death &
+            Robots series of animations.
+          </p>
+        </div>
+      </div>
+      <video
+        controls
+        class="video-player"
+        style="max-width: 100%"
+        src="../video/The Very Pulse resized Resound.mp4"
+      ></video>
+    </section>
+  </body>
+</html>

@@ -7,47 +7,172 @@
       href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <title>Portfolio Jasmine Griffiths</title>
   </head>
 
-  <header>
-    <title>Portfolio Jasmine Griffiths</title>
-    <div class="my-name">
-      <h1 class="jasmine">Jasmine</h1>
-      <h1 class="griffiths">Griffiths</h1>
-    </div>
-    <nav>
-      <ul class="nav-ul">
-        <i><a href="index.html">Portfolio </a></i>
-        <i><a href="contact.html">Contact</a></i>
-      </ul>
-    </nav>
-  </header>
-
   <body>
+    <header>
+      <nav>
+        <a
+          class="nav-icon"
+          onmouseover="growingPortfolio()"
+          onmouseout="shrinkingPortfolio()"
+          onclick="goToPF()"
+          id="buttonPortfolio"
+          href="index.html"
+        >
+          <div class="container">
+            <img
+              src="img/portfolio.png"
+              style="width: 100%"
+              id="portfolioImage"
+              alt="a gradient purple icon with the text 'portfolio'"
+            />
+            <img class="ring" src="img\ring.png" ; id="ringPortfolio" />
+          </div>
+        </a>
+
+        <a class="my-name" href="about.html" style="text-decoration: none">
+          <h1 class="jasmine">Jasmine</h1>
+          <h1 class="griffiths">Griffiths</h1>
+        </a>
+
+        <a
+          class="nav-icon"
+          onmouseover="growingContact()"
+          onmouseout="shrinkingContact()"
+          onclick="goToC()"
+          id="buttonContact"
+          href="contact.html"
+        >
+          <div class="container">
+            <img
+              src="img/contact.png"
+              style="width: 100%"
+              id="contactImage"
+              alt="a gradient coral-orange icon with the text 'contact'"
+            />
+            <img
+              class="ring"
+              src="img\ring.png"
+              ;
+              id="ringContact"
+              style="left: 35%"
+              ;
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
     <section id="portfolio-box">
       <div class="pf-grid">
         <container>
           <img class="thumbnail-preview" src="img/ThumnailwithLaurel1.png" />
-          <p>Sound design and music composition for Void.</p>
+          <h2 style="text-align: left">
+            <a class="works-links" href="works/void.html">Void</a
+            ><span> - Sound and Music</span>
+          </h2>
+          <a href="works/void.html"
+            ><div class="hoverbox" style="width: 100%"></div
+          ></a>
         </container>
         <container>
+          <img class="thumbnail-preview" src="img/0CVWeY.png" />
+          <a href="works/youre_at_a_party.html">
+            <div class="hoverbox" style="width: 100%"></div
+          ></a>
+          <h2>
+            <a class="works-links" href="works/youre_at_a_party.html"
+              >You're At A Party</a
+            ><span> - Sound and Music</span>
+          </h2>
+        </container>
+        <!-- <container>
           <img
             class="thumbnail-preview"
             src="img/54134030931_a28b8781e6_k.jpg"
           />
-          <p>
-            Lighting design for the Capitol Theatre 100 Year Anniversary Gala.
-          </p>
+          <a href="works/capitol_100.html"
+            ><div class="hoverbox" style="width: 100%"></div>
+          </a>
+          <h2>
+            <a class="works-links" href="works/capitol_100.html">Capitol 100</a
+            ><span> - Lighting Design</span>
+          </h2>
+        </container> -->
+        <container>
+          <img class="thumbnail-preview" src="img/walking through.png" />
+          <a href="works/walking_through_time.html">
+            <div class="hoverbox" style="width: 100%"></div
+          ></a>
+          <h2>
+            <a class="works-links" href="works/walking_through_time.html"
+              >Maribyrnong: A Walk Through Time</a
+            ><span> - Sound and Video</span>
+          </h2>
         </container>
+        <container>
+          <img class="thumbnail-preview" src="img/thumbmesmer.png" />
+          <a href="works/mesmerising.html">
+            <div class="hoverbox" style="width: 100%"></div
+          ></a>
+          <h2>
+            <a class="works-links" href="works/mesmerising.html">Mesmerising</a
+            ><span> - Music Composition</span>
+          </h2>
+        </container>
+        <container>
+          <img class="thumbnail-preview" src="img/verypulse.jpg" />
+          <a href="works/the_very_pulse_of_the_machine.html">
+            <div class="hoverbox" style="width: 100%"></div
+          ></a>
+          <h2>
+            <a
+              class="works-links"
+              href="works/the_very_pulse_of_the_machine.html"
+              >The Very Pulse of the Machine</a
+            ><span> - Resound</span>
+          </h2>
+        </container>
+        <container>
+          <img class="thumbnail-preview" src="img/fluid.png" />
+          <a href="works/a_fluid_understanding.html">
+            <div class="hoverbox" style="width: 100%"></div
+          ></a>
+          <h2>
+            <a class="works-links" href="works/a_fluid_understanding.html"
+              >A Fluid Understanding</a
+            ><span> - Generative Video</span>
+          </h2>
+        </container>
+        <!-- <container>
+          <img
+            class="thumbnail-preview"
+            src="img/the mycelial collective.png"
+          />
+          <a href="works/the_mycelial_collective.html">
+            <div class="hoverbox" style="width: 100%"></div
+          ></a>
+          <h2>
+            <a class="works-links" href="works/the_mycelial_collective.html"
+              >The Mycelial Collective</a
+            ><span> - Podcast</span>
+          </h2>
+        </container> -->
       </div>
     </section>
+    <footer style="height: 4rem"></footer>
   </body>
 </html>
