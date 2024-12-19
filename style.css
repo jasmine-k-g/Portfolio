@@ -198,7 +198,7 @@
   body {
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     background-image: var(--primary-background-image);
     background-repeat: repeat;
     font-family: sans-serif;
@@ -227,11 +227,14 @@
 
   nav {
     margin: auto;
-    padding-top: 4%;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: rgba(235, 235, 235, 0.913);
+    position: fixed;
+    top: 0;
+    z-index: 70000;
   }
 
   .my-name {
@@ -291,9 +294,9 @@
     margin-top: 3rem;
     padding: 5rem;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin-top: 3rem;
+    padding-top: 12rem;
   }
 
   #contact-icon-box {
