@@ -3,7 +3,7 @@
 }
 
 /* DESKTOP STYLING (and tablet)*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   body {
     height: 100%;
     overflow-y: scroll;
@@ -194,7 +194,7 @@
 }
 
 /* MOBILE STYLING */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
   body {
     height: 100%;
     width: 100%;
