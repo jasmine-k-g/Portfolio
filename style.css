@@ -135,8 +135,9 @@
   .thumbnail-preview {
     width: 100%;
     height: 15rem;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     border-radius: 3px;
+    object-fit: cover;
   }
 
   /* grey box default state */
