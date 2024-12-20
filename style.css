@@ -19,7 +19,8 @@
     margin: auto;
     margin-bottom: 1rem;
     margin-top: 6rem;
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
   }
 
   .works-links {
@@ -214,9 +215,10 @@
   .video-player {
     border: none;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     margin-top: 6rem;
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
   }
 
   .works-links {
@@ -296,11 +298,11 @@
   section {
     background-color: rgba(24, 136, 74, 0.665);
     margin-top: 3rem;
-    padding: 5rem;
+    padding-bottom: 3rem;
     border-radius: 4px;
     width: 100%;
     margin: auto;
-    padding-top: 12rem;
+    padding-top: 9rem;
     margin-bottom: 0;
   }
 
@@ -324,6 +326,13 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin: 3rem;
+    margin-bottom: 0;
+  }
+
+  .aforementioned-content {
+    margin: 3rem;
+    margin-bottom: 0rem;
   }
 
   container {
@@ -364,6 +373,10 @@
     color: rgb(60, 58, 98);
   }
 
+  a {
+    color: rgb(31, 38, 98);
+  }
+
   span {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.7);
@@ -383,6 +396,7 @@
     border-radius: 20px;
     cursor: pointer;
     background-color: rgb(238, 186, 170);
+    color: black;
   }
 
   .link-button:hover {
