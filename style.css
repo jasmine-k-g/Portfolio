@@ -333,10 +333,9 @@
     border-radius: 3px;
   }
 
-  /* grey box default state */
   .hoverbox {
     position: absolute;
-    height: 15rem;
+    /* height: 15rem; */
     top: 0;
     background-color: rgba(255, 255, 255, 0);
     transition: background-color ease-out 0.3s;
@@ -345,9 +344,9 @@
   }
 
   /* grey box hover state */
-  .hoverbox:hover {
+  /* .hoverbox:hover {
     background-color: rgba(114, 114, 114, 0.56);
-  }
+  } */
 
   h2 {
     font-family: junge;
