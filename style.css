@@ -233,10 +233,9 @@ audio {
   audio {
     border: none;
     border-radius: 3px;
-    margin: auto;
-    margin-bottom: 3rem;
+    margin: 0.5rem;
     margin-top: 6rem;
-    width: 100%;
+    width: 50%;
   }
 
   .works-links {
