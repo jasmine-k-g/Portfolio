@@ -199,6 +199,15 @@
   }
 }
 
+audio {
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 6rem;
+  width: 100%;
+}
+
 /* MOBILE STYLING */
 @media only screen and (max-width: 900px) {
   body {
@@ -219,6 +228,15 @@
     margin-top: 6rem;
     width: 100%;
     aspect-ratio: 16/9;
+  }
+
+  audio {
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    width: 100%;
   }
 
   .works-links {
