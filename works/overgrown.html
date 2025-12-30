@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+    <title>Portfolio Jasmine Griffiths</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a
+          class="nav-icon"
+          onmouseover="growingPortfolio()"
+          onmouseout="shrinkingPortfolio()"
+          onclick="goToPF()"
+          id="buttonPortfolio"
+          href="../index.html"
+        >
+          <div class="container">
+            <img
+              src="../img/portfolio.png"
+              style="width: 100%"
+              id="portfolioImage"
+              alt="a gradient purple icon with the text 'portfolio'"
+            />
+            <img class="ring" src="../img\ring.png" ; id="ringPortfolio" />
+          </div>
+        </a>
+
+        <a class="my-name" href="../about.html" style="text-decoration: none">
+          <h1 class="jasmine">Jasmine</h1>
+          <h1 class="griffiths">Griffiths</h1>
+        </a>
+
+        <a
+          class="nav-icon"
+          onmouseover="growingContact()"
+          onmouseout="shrinkingContact()"
+          onclick="goToC()"
+          id="buttonContact"
+          href="../contact.html"
+        >
+          <div class="container">
+            <img
+              src="../img/contact.png"
+              style="width: 100%"
+              id="contactImage"
+              alt="a gradient coral-orange icon with the text 'contact'"
+            />
+            <img
+              class="ring"
+              src="../img\ring.png"
+              ;
+              id="ringContact"
+              style="left: 35%"
+              ;
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
+    <section class="content-box" style="text-align: center">
+      <div class="aforementioned-content">
+        <div class="description">
+          <h2 style="font-size: 1.4rem">
+            Overgrown<br /><span
+              >Sound, music and words by Jasmine Griffiths<br />Voice of the
+              protagonist by Sophie Harvey<br />Voice of the friend by Cleo
+              Fawcett</span
+            >
+          </h2>
+          <div class="description-para">
+            <p>
+              Overgrown is a work of narrative fiction following a young woman
+              who is living alone for the first time, and whose houseplants do
+              not make very good company.
+            </p>
+            <p>
+              This is a binaural audio work, it is best experienced with
+              headphones.
+            </p>
+          </div>
+        </div>
+      </div>
+      <audio
+        controls
+        src="https://dl.dropbox.com/scl/fi/9289mq9vnz9ks5wkug0hy/overgrown-binaural-25-10.wav?rlkey=2yiwdi83ei1rzab1wxt9bhnn4&st=pra4zp2c&dl=0"
+      ></audio>
+    </section>
+  </body>
+  <footer></footer>
+</html>
